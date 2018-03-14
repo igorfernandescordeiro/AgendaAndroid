@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ifcig.agendaandroid.TelaEditarActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="384dp"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/paginaeditarlayout"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSalvar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        app:srcCompat="@drawable/iconeconfirmar"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <EditText
+        android:id="@+id/editTextNome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNome2"
+        android:layout_alignStart="@+id/editTextNome2"
+        android:layout_below="@+id/editTextNome2"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextCelular2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextEmail2"
+        android:layout_alignStart="@+id/editTextEmail2"
+        android:layout_below="@+id/editTextEmail2"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="phone" />
+</android.widget.RelativeLayout>
